@@ -5,7 +5,7 @@ const { TextArea } = Input;
 function PersonalInformal() {
   return (
     <div>
-      <Card title="Give Your Personal Information" className="card"  >
+     
         <Row>
           <Col span={10} style={{marginLeft:"0rem"}}>
           {""}
@@ -30,7 +30,7 @@ function PersonalInformal() {
           </Col>
         </Row>
         <Row>
-          <Col span={10}>
+          <Col span={10} >
           
             <Form.Item name="email" label="Email" rules={[{ required: true }]}>
               <Input />
@@ -80,7 +80,7 @@ function PersonalInformal() {
           </Form.Item>
           </Col>
         </Row>
-      </Card>
+    
     </div>
   );
 }
