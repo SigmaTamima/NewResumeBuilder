@@ -9,10 +9,10 @@ const path = require('path')
 app.use("/api/user/", userRoute)
 
 if (process.env.NODE_ENV === "production") {
-    app.use("/", express.static("client/build"));
+    app.use("/", express.static("resume/build"));
   
     app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client/build/index.html"));
+      res.sendFile(path.resolve(__dirname, "resume/build/index.html"));
     });
   }
 app.get("/", (req, res) => res.send("Hello World!"));
